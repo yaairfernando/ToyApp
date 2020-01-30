@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# Refile.store ||= Refile::Backend::FileSystem.new("/tmp/uploads/store".to_s)
+# Refile.cache ||= Refile::Backend::FileSystem.new("/tmp/uploads/cache".to_s)
 module ToyApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
